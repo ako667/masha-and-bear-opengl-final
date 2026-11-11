@@ -1,0 +1,8 @@
+/build/
+/out/
+/bin/
+/.vs/
+*.ppm
+*.log
+hardware.txt
+benchmark.txt
