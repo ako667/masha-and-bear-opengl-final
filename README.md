@@ -12,7 +12,7 @@ Download [Forest_Home_Windows_x64.zip](Forest_Home_Windows_x64.zip?raw=true). Ex
 
 Press Enter to start. WASD moves, the mouse or arrow keys look around, Shift moves faster, and Escape releases the mouse. E near the front door opens or closes it.
 
-Keys 1вЂ“9 select viewpoints. Key 0 shows Bear close up. N switches day/night, L toggles shadows, T toggles procedural materials, H toggles help, and F9 starts a four-minute guided tour.
+Keys 1-9 select viewpoints. Key 0 shows Bear close up. N switches day/night, L toggles shadows, T toggles procedural materials, H toggles help, and F9 starts a four-minute guided tour.
 
 The yard includes a fence, flowers, an apiary, vegetables and a shower. Inside are a furnished lounge, kitchen and an upstairs bedroom reached by curved stairs. Masha and Bear are original stylised procedural models.
 
@@ -28,7 +28,7 @@ The full source is packaged as an archive because this repository was uploaded t
 
 Install Visual Studio 2022 or 2026 with Desktop development with C++, Windows SDK and CMake tools. GLFW, GLEW and GLM sources are included. Configuration performs no network fetch.
 
-Open this folder in Visual Studio and select the matching preset, or run:
+Open this folder in Visual Studio with CMake support, or run:
 
 ```powershell
 ./build.ps1
@@ -48,9 +48,9 @@ cd out/manual/bin/Release
 
 ## Rendering
 
-The scene uses indexed and instanced meshes, model/view/projection transforms, GLSL materials, directional and local lighting, 2048Г—2048 filtered shadow mapping, tone mapping and time-based animation. Static transforms are cached and distant forest trees use reduced geometry.
+The scene uses indexed and instanced meshes, model/view/projection transforms, GLSL materials, directional and local lighting, 2048x2048 filtered shadow mapping, tone mapping and time-based animation. Static transforms are cached and distant forest trees use reduced geometry.
 
-A 20-second VSync-off Release measurement at the welcome viewpoint averaged about 29.9 FPS at 1440Г—900 on AMD Radeon (TM) Graphics with 4Г— MSAA and shadows enabled, with zero OpenGL errors. Performance varies with viewpoint and hardware.
+A 20-second VSync-off Release measurement at the welcome viewpoint averaged about 29.9 FPS at 1440x900 on AMD Radeon (TM) Graphics with 4x MSAA and shadows enabled, with zero OpenGL errors. Performance varies with viewpoint and hardware.
 
 ![Bedroom loft](bedroom.png)
 
